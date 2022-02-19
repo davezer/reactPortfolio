@@ -11,6 +11,7 @@ function Footer() {
         </ul>
         <h4>© 2022 Dave Oliverio</h4><br/>
       </div>
+      <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
     </footer>
   );
 };

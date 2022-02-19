@@ -13,7 +13,7 @@ function Navigation() {
               <Nav className="ms-auto">
                 <Nav.Link className="nav-link" href="#about">About</Nav.Link>
                 <Nav.Link className="nav-link" href="#experience">Experience</Nav.Link>
-                <Nav.Link className="nav-link" href="#feature">Projects</Nav.Link>
+                <Nav.Link className="nav-link" href="#featured">Projects</Nav.Link>
                 <Nav.Link className="nav-link" href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>

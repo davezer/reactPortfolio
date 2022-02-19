@@ -57,9 +57,9 @@ function Featured() {
                       <div className="card mb-3 text-start feature-project">
                         <div className="row">
                           <div className="col-12 col-lg-5">
-                            <div className="card-header">Featured Project</div>
+                            <div className="card-header">Featured Projects</div>
                             <div className="card-body">
-                              <h3 className="card-title"><a href={featured.deploy} target="_blank" rel="noreferrer">{featured.name}</a></h3>
+                              <h3 className="card-title"><a href={featured.deployed} target="_blank" rel="noreferrer">{featured.name}</a></h3>
                               <p className="card-text">{featured.description}</p>
                               <p><small className="text-skill">{featured.skills}</small></p>
                               
