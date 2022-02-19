@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -7,19 +8,47 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
     const form = useRef();
-    function sendEmail(e){
+    
+    function sendEmail(e) {
         e.preventDefault();
-    }
-    function handleChange(e) {
+    
+        emailjs.sendForm('service_en5crys', 'template_dave', form.current, 'user_vNCUuzNUmVUXadQmB3VM4')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+      };
 
-    }
+
+      function handleChange(e) {
+
+        if (e.target.name === 'email') {
+          const isValid = validateEmail(e.target.value);
+          
+          if (!isValid) {
+            setErrorMessage('email is invalid.');
+          } else {
+            if (!e.target.value.length) {
+              setErrorMessage(`${e.target.name} is required.`)
+            } else {
+              setErrorMessage('');
+            }
+          }
+        }
+        setFormState({...formState, [e.target.name]: e.target.value })
+    
+        if (!errorMessage) {
+          setFormState({ ...formState, [e.target.name]: e.target.value });
+        }
+      }
 
     return (
         <section id="contact">
           <div className="contacts">
             <h1 data-testid="h1tag" className="title">Get in Touch</h1>
-            <p>I am looking for new opportunities to grow. My inbox is open.</p>
-            <p>Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <p>Feel free to contact me! I'm always available!</p>
+            
           
             <form className="form" ref={form} onSubmit={sendEmail}>
               <div>
