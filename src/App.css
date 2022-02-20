@@ -1,38 +1,415 @@
-.App {
+:root {
+  --font-family: 'Ubuntu', sans-serif;
+  --charcoal: #101519;
+  --white:  #fff;
+  --chestnut: #98473E;
+  --cadetGrey: #9EA3B0;
+  --pacificBlue: #006D77;
+  --copper: #BE7220;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--white);
+  font-family: var(--font-family);
+  margin: 0;
+  line-height: 1.1;
+  box-sizing: border-box;
+  min-width: fit-content;
+}
+.brand {
+  color: var(--pacificBlue) !important;
+  font-size: 30px;
+  padding-top: 1px;
+
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+  padding: 1rem;
+  
+}
+
+.navbar-toggler {
+  background-color: var(--charcoal);
+}
+
+.navbar-nav {
+  margin: -25px 10px;
+  border: 18px solid var(--cadetGrey);
+  padding: 10px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav  {
+  border: 2px solid var(--charcoal);
+  color: var(--charcoal);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-fluid {
+  padding: 0px 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* NAVBAR */
+
+.navbar {
+  background-color: var(--charcoal);
+  top: 0;
+  transition: top 0.3s;
+  opacity: 97%;
+  box-shadow: 0 3px 10px black;
+}
+
+.intro-title {
+  color: var(--pacificBlue);
+  padding: 5px 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.intro-name {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.intro-text-slider {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.intro p {
+  padding: 30px 0px;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.text-sub {
+  font-weight: 100;
+  font-size: 19px;
+}
+
+.card-header {
+  font-size: 16px;
+  color: var(--cyan);
+  font-weight: lighter;
+  border-style: none;
+  background-color: var(--charcoal);
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-size: 25px;
+  color: var(--white);
+  transition: all 0.3s ease-out;
+  margin-top: 5px;
+}
+
+.text-skill {
+  margin: 0;
+  font-size: 15px;
+  bottom: 0;
+}
+
+.contacts p {
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.intro a,
+.jobs a,
+.feature a,
+.contacts a,
+.side-email a,
+.btn {
+  color: var(--pacificBlue);
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.intro a:hover,
+.jobs a:hover,
+.feature a:hover,
+.project-card a:hover,
+.contacts a:hover,
+.side-email a:hover,
+.btn:hover {
+  color: var(--charcoal);
+}
+
+
+/* INTRO */
+.intro {
+  height: 100vh;
+  padding-top: 15%;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+/* ABOUT */
+
+section {
+  margin: 0 auto;
+  transition: all 1s ease;
+  padding-top: 5%;
+}
+
+.about {
+  width: 45%;
+}
+
+.inner {
+  padding-top: 1rem;
+}
+
+.about-description {
+  line-height: 1.4;
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+/* EXPEREIENCE */
+.jobs {
+  height: 100%;
+  width: 65%;
+}
+
+.jobs article {
+  padding: 20px 0;
+}
+
+.jobs li {
+  line-height: 1.5;
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+.jobs li:before {
+  content: "\25BA \0020";
+  font-size: 10px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+
+
+/* FEATURED */
+
+.feature {
+  width: 60%;
+  text-align: center;
+}
+
+.feature-project {
+  background-color: var(--charcoal);
+  border-style: none;
+  padding: 3rem 0;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.card-text {
+  background-color: var(--charcoal);
+  padding: 0.5rem;
+}
+
+.feature a {
+  color: var(--white);
+}
+
+/* .feature img {
+  width: 100%;
+  height: auto;
+  opacity: 60%;
+  transition: all 0.5s ease-out;
+}
+
+.feature img:hover {
+  opacity: 100%;
+  transform: scale(1.03);
+} */
+
+/* CONTACT */
+
+.contacts {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts .btn {
+  margin-top: 3rem;
+  border: 2px solid var(--pacificBlue);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.contacts .btn:hover {
+  transform: scale(1.1);
+}
+
+.form {
+  margin: 5% 0 0 0;
+}
+
+.form-input {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-button {
+  width: 500px;
+  margin: 15px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
   color: white;
+  background-color: var(--pacificBlue);
+  border-color: var(--cadetGrey);
+  transition: all 0.5s ease-out;
 }
 
-.App-link {
-  color: #61dafb;
+.form-button:hover {
+  background-color: var(--cadetGrey);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* FOOTER */
+
+footer {
+  background: var(--charcoal);
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h4 {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+footer h4:hover {
+  color: var(--cadetGrey);
+}
+
+
+
+
+
+/* Media Query for Larger Desktop Screen and Smaller */
+
+@media screen and (max-width: 1800px) {
+  .about {
+    width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+  .side-email {
+    left: 80%;
+  }
+}
+
+/* Media Query for Desktops and Smaller */
+@media screen and (max-width: 1280px) {
+  .intro {
+    width: 60%;
+  }
+
+  .about,
+  .feature,
+  .jobs {
+    width: 80%;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+    opacity: 20%;
+  }
+
+  .side-email {
+    left: 78%;
+  }
+}
+
+/* Media Query for Tablets Ipads Portrait Mode and Smaller */
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 0 20px;
+  }
+
+  .intro,
+  .about,
+  .jobs {
+    width: 90%;
+  }
+}
+
+/* Specially made this for side links */
+@media screen and (max-width: 991px) {
+  .side-email {
+    left: 72%;
+  }
+}
+
+/* Media Query for Low Resolution Tablets and Ipads and Smaller */
+@media screen and (max-width: 767px) {
+  main {
+    margin: 0 5px;
+  }
+
+  section {
+    padding: 3rem;
+  }
+
+  .intro {
+    padding-left: 5%;
+  }
+
+  .intro h1,
+  p {
+    font-size: 15px;
+  }
+
+  .intro h2 {
+    font-size: 50px;
+  }
+
+  .intro h3,
+  .title {
+    font-size: 25px;
+  }
+
+  .intro-text-slider {
+    color: white;
+  }
+
+
+  .inner {
+    padding: 0;
+  }
+
+  .about,
+  .jobs,
+  .feature {
+    width: 90%;
+    margin: 0 auto;
   }
 }

@@ -10,8 +10,8 @@ function Featured() {
                     deploy: "https://trackend-project.herokuapp.com/",
                     // image: img_trackend,
                     alt: "Trackend Project",
-                    description: "Issue Tracker Ticketing System with a CMS (Content Management System) style. Uses authentication and MVC paradigm, using Handlebars.js as template, Sequelize as ORM (Object-Relational Mapping) and Express-Session for authentication.",
-                    skills: "Bootstrap-Table Handlebars Sequelize MySQL Express API Heroku"
+                    description: "Issue Tracker Ticketing System with a CMS style. Uses authentication and MVC, Handlebars.js as template, Sequelize as ORM and Express-Session for authentication.",
+                    skills: "Bootstrap-Table | Handlebars |Sequelize | MySQL | Express | API | Heroku"
                 },
                 {
                     id: "followTheMoney",
@@ -21,7 +21,7 @@ function Featured() {
                     // image: ,
                     alt: "Follow The Money project" ,
                     description: "Search by memeber of congress to see how they vote and where their campaign contributions come from. Simple and fast." ,
-                    skills: "Bulma JavaScript CSS jQuery API",
+                    skills: "Bulma | JavaScript | CSS | jQuery | API",
                 },
                 // {
                 //     id: ,

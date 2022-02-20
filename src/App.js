@@ -8,7 +8,6 @@ import './App.css';
 
 //import components
 import Navigation from './components/Nav/nav';
-import Intro from './components/Intro/intro';
 import About from './components/About/about';
 import Featured from './components/Featured/featured';
 import Experience from './components/Experience/experience';
@@ -21,7 +20,6 @@ function App() {
       <Navigation /> 
       <main>
       <>
-        <Intro />
         <About />
         <Experience />
         <Featured />

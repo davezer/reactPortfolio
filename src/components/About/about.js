@@ -1,12 +1,20 @@
 import React from 'react';
+import Typed from 'react-typed';
 
 function About() {
     return(
         <>
         <section id="about" className="about">
-            <h2 className="title">
-            Hello, I'm David!
-            </h2>
+            <h1 className="intro-title">Hello, I'm</h1>
+            <h1 className="intro-name">Dave Oliverio.</h1>
+            <span className="intro-text-slider">
+                <Typed
+                strings={[
+                    "Full Stack Web Developer"
+                ]}
+                typeSpeed={50}
+                />
+            </span>
             <div className="inner container">
                 <div className="row">
                     <div className="about-description col-lg-6 col-md-12">
@@ -27,6 +35,7 @@ function About() {
         </>
     );
 }
+
 
 
 export default About;

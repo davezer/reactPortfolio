@@ -1,11 +1,4 @@
-:root {
-  --font-family: 'Ubuntu', sans-serif;
-  --charcoal: #101519;
-  --white:  #fff;
-  --oldBurgandy: #42252F;
-  --cadetGrey: #95A8BC;
-  --pacificBlue: #1ABDD5;
-}
+
 
 body {
   background-color: var(--charcoal);
@@ -23,3 +16,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
