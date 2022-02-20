@@ -31,8 +31,15 @@ body {
   font-size: 18px;
   padding: 1rem;
   text-decoration: none;
-  text-align: center;
-  
+  text-align: center;  
+}
+
+.nav-links {
+  margin: 0px 0px 0px 0px;
+}
+
+.nav-item {
+  display: inline-block;
 }
 
 .navbar {

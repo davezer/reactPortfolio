@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header/index';
 
 // import libraries
 
@@ -6,28 +7,18 @@ import React from 'react';
 import './App.css';
 
 
-//import components
-import Navigation from './components/Nav/nav';
-import About from './components/About/about';
-import Featured from './components/Featured/featured';
-import Experience from './components/Experience/experience';
-import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 
 function App() {
   return (
-    <div>
-      <Navigation /> 
-      <main>
-      <>
-        <About />
-        <Experience />
-        <Featured />
-        <Contact />
-      </>
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div>
+        <Header></Header>
+      </div>
+      <div>
+        <Footer />
+      </div>  
+    </>    
   );
 }
 
