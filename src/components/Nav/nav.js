@@ -1,13 +1,14 @@
 import React from 'react';
-
 import { Navbar, Nav, Container } from 'react-bootstrap'
 
 function Navigation() {
 
     return (
         <Navbar className="navbar sticky-top" id="navbar" bg="" expand="md">
-          <Container>
+          <Container className="brand-con">
             <Navbar.Brand className ="brand" href="./index.html"><i class="fa-solid fa-d"></i></Navbar.Brand>
+          </Container>
+          <Container>  
               <Nav className="ms-auto">
                 <Nav.Link className="nav-link" href="#about">About</Nav.Link>
                 <Nav.Link className="nav-link" href="#experience">Experience</Nav.Link>

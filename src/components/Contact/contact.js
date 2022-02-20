@@ -46,19 +46,19 @@ function Contact() {
     return (
         <section id="contact">
           <div className="contacts">
-            <h1 data-testid="h1tag" className="title">Get in Touch</h1>
+            <h1 className="title">Contact Me</h1>
             <p>Feel free to contact me! I'm always available!</p>
             
           
             <form className="form" ref={form} onSubmit={sendEmail}>
               <div>
-                <input className="form-input" placeholder="Your Name" type="text" defaultValue={name} onBlur={handleChange} name="user_name"/>
+                <input className="form-input" placeholder="Name" type="text" defaultValue={name} onBlur={handleChange} name="user_name"/>
               </div>
               <div>
-                <input className="form-input" placeholder="Your Email" type="email" defaultValue={email} name="user_email" onBlur={handleChange} />
+                <input className="form-input" placeholder="Email" type="email" defaultValue={email} name="user_email" onBlur={handleChange} />
               </div>
               <div>
-                <textarea className="form-input" placeholder="Your Message" name="message" defaultValue={message} rows="5" onBlur={handleChange} />
+                <textarea className="form-input" placeholder="Message" name="message" defaultValue={message} rows="5" onBlur={handleChange} />
               </div>
               {errorMessage && (
                 <div>

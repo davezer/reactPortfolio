@@ -1,12 +1,16 @@
 import React from 'react';
 import Typed from 'react-typed';
+import profileImage from '../../assets/images/daveoliverio.jpg';
 
 function About() {
     return(
         <>
         <section id="about" className="about">
-            <h1 className="intro-title">Hello, I'm</h1>
-            <h1 className="intro-name">Dave Oliverio.</h1>
+            <div className=" row image-container">
+                <img className="col-lg-6 col-md-12 m-auto profile-pic" src={profileImage} alt="Dave Oliverio" />
+                <h1 className="intro-title">Hello, I'm</h1>
+                <h1 className="intro-name">Dave Oliverio</h1>
+            </div>  
             <span className="intro-text-slider">
                 <Typed
                 strings={[
