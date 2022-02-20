@@ -9,7 +9,7 @@ function Featured() {
                     id: "trackend",
                     name: "Trackend",
                     github: "https://github.com/paperpatch/trackend",
-                    deploy: "https://trackend-project.herokuapp.com/",
+                    deployed: "https://trackend-project.herokuapp.com/",
                     image: img_trackend,
                     alt: "Trackend Project",
                     description: "Issue Tracker Ticketing System with a CMS style. Uses authentication and MVC, Handlebars.js as template, Sequelize as ORM and Express-Session for authentication.",
@@ -71,7 +71,7 @@ function Featured() {
                             </div>
                           </div>
                           <div className="col-12 col-lg-7">
-                            <a href={featured.deploy} target="_blank" rel="noreferrer">
+                            <a href={featured.deployed} target="_blank" rel="noreferrer">
                               <img src={featured.image} className="rounded float-end" alt={featured.alt} />
                             </a>
                           </div>

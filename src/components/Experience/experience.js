@@ -15,10 +15,10 @@ function Experience() {
           <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--school"
-                contentStyle={{ background: '#95A8BC', color: '#fff' }}
+                contentStyle={{ background: '#006D77', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #95A8BC' }}
                 date="2021 - Present"
-                iconStyle={{ background: '#95A8BC', color: '#fff' }}
+                iconStyle={{ background: '#BE7220', color: '#fff' }}
                 icon={<i class="fa-solid fa-graduation-cap work-icons" />}
             >
                 <h3 className="vertical-timeline-element-title">Uconn Coding Bootcamp</h3>
@@ -34,10 +34,10 @@ function Experience() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: '#95A8BC', color: '#fff' }}
+                contentStyle={{ background: '#006D77', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #95A8BC' }}
                 date="2014 - 2021"
-                iconStyle={{ background: '#95A8BC', color: '#fff' }}
+                iconStyle={{ background: '#BE7220', color: '#fff' }}
                 icon={<i class="fa-solid fa-briefcase work-icons2"></i>}
             >
                 <h3 className="vertical-timeline-element-title">USPS</h3>
@@ -53,10 +53,10 @@ function Experience() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--school"
-                contentStyle={{ background: '#95A8BC', color: '#fff' }}
+                contentStyle={{ background: '#006D77', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #95A8BC' }}
                 date="2020 - 2021"
-                iconStyle={{ background: '#95A8BC', color: '#fff' }}
+                iconStyle={{ background: '#BE7220', color: '#fff' }}
                 icon={<i class="fa-solid fa-graduation-cap work-icons" />}
             >
                 <h3 className="vertical-timeline-element-title">Gateway Community College</h3>

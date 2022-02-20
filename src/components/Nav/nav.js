@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 
 
 function Navigation (props) {
-  const tabs = ['About', 'Experience', 'Featured', 'Contact'];
+  const tabs = ['About', 'Experience', 'Projects', 'Contact', 'Resume'];
   return (
     <Navbar className="navbar sticky-top" id="navbar" bg="" expand="md">
       <Container className="brand-con">

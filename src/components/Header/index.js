@@ -4,6 +4,7 @@ import About from '../About/about';
 import Experience from '../Experience/experience';
 import Featured from '../Featured/featured';
 import Contact from '../Contact/contact';
+import Resume from '../Resume/index'
 
 
 function Portfolio() {
@@ -15,10 +16,12 @@ function Portfolio() {
                 return <About></About>
             case "Experience":
                 return <Experience></Experience>
-            case "Featured":
+            case "Projects":
                 return <Featured></Featured>
             case "Contact":
                 return <Contact></Contact>
+            case "Resume":
+                return <Resume></Resume>
             default:
                 return <About></About>
         }
