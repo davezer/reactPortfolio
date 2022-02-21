@@ -1,5 +1,6 @@
-import React from 'react'; 
-import { Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react'; 
+import { Row, Col, Modal, Button } from 'react-bootstrap';
+import { PDFObject } from 'react-pdfobject';
 import icon_html from '../../assets/icons/frontend/icon-html.svg';
 import icon_css from '../../assets/icons/frontend/icon-css.svg';
 import icon_javascript from '../../assets/icons/frontend/icon-javascript.svg';
@@ -14,8 +15,13 @@ import icon_heroku from '../../assets/icons/backend/icon-heroku.svg';
 import icon_bash from '../../assets/icons/tools/icon-bash.svg';
 import icon_github from '../../assets/icons/tools/icon-github-bootstrap.svg';
 import icon_npm from '../../assets/icons/tools/icon-npm.svg';
+import resume from '../../assets/resume/Dave+Oliverio.pdf';
 
 function Resume() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
     const skills = {
         frontend: [
@@ -97,17 +103,40 @@ function Resume() {
       }
     
     return(
-        <>
-        <h1 className="resume">RESUME</h1>
-        <div class="resume-intro">
-            <Row>
-                <Col lg={8} md={12}>
-                    Full Stack Web Developer who possesses technical skills within the MERN stack. <br></br>
-                    <br></br>
-                    Always continuously learning and trying to do better.
-                </Col>
-            </Row>
-        </div>
+      <>
+      <div className='resume-btn-div'>
+        <Button className="resume-btn" onClick={handleShow}>
+          Open Resume
+        </Button>
+      </div>
+        <Modal
+          show={show}
+          onHide={handleClose}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Resume</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <PDFObject url={resume}/>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      
+          
+          <h1 className="resume">RESUME</h1>
+          <div class="resume-intro">
+              <Row>
+                  <Col lg={8} md={12}>
+                      Full Stack Web Developer who possesses technical skills within the MERN stack. <br></br>
+                      <br></br>
+                      Always continuously learning and trying to do better.
+                  </Col>
+              </Row>
+          </div>
 
         <div class="resume-container">
             <Row>
