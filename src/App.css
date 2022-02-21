@@ -37,7 +37,7 @@ body {
   text-align: center;  
 }
 
-.nav-link:active {
+.nav-link.active {
   color: var(--copper);
 }
 
@@ -354,7 +354,7 @@ section {
 
 .resume-btn-div {
   padding: auto;
-  margin: 137px 0px -108px 0px;
+  margin: 67px -1500px -80px -16px;
   text-align: center;
 }
 
@@ -367,8 +367,8 @@ h1.resume{
 .resume-intro {
   text-align: center;
   font-size: 20px;
-  padding-top: 115px;
-  padding-bottom: 115px;
+  padding-top: 152px;
+    padding-bottom: 21px;
 }
 
 h2.resume {
@@ -400,25 +400,31 @@ h2.resume {
 }
 
 .resume-btn {
-  background-color: var(--charcoal);
-  color: var(--white)
+  background-color: var(--pacificBlue);
+  color: var(--white);
+  border-radius: 10px;
+  border-color: var(--white);
+  height: 54px;
+  width: 140px;
+  font-size: larger;
 }
 
 .resume-btn:hover {
-  background-color: var(--pacificBlue);
+  background-color: var(--copper);
   color: var(--white);
 }
 
 .modal-dialog {
-  width: 100%;
+  width: 50%;
 }
 
 .modal-header {
-  color: black;
+  color: var(--charcoal);
 }
 
 .modal-content {
-  position: absolute;
+  padding-top: 254px;
+  bottom: -83px;
   bottom: 0;
   height: 90vh;
 }

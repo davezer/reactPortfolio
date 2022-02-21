@@ -174,7 +174,7 @@ function Resume() {
                         </div>
                 </Col>
                 <Col lg={4} md={12}>
-                <h2 className="resume">Tools:</h2>
+                <h2 className="resume">TOOLS</h2>
                 <div className="row row-cols-auto tools">
                     {skills.tools.map( tools => {
                         return (
