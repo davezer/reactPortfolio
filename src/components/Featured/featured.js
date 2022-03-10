@@ -1,6 +1,7 @@
 import React from 'react';
 import img_ftm from '../../assets/projects/FTM.png';
 import img_trackend from '../../assets/projects/trackend-screenshot.webp';
+import img_obsessify from '../../assets/projects/obsessifySS.png';
 
 function Featured() {
         const featured = {
@@ -25,16 +26,16 @@ function Featured() {
                     description: "Search by memeber of congress to see how they vote and where their campaign contributions come from. Simple and fast." ,
                     skills: "Bulma | JavaScript | CSS | jQuery | API",
                 },
-                // {
-                //     id: ,
-                //     name: ,
-                //     github: ,
-                //     deployed: ,
-                //     // image: ,
-                //     alt: ,
-                //     description: ,
-                //     skills: ,
-                // },
+                {
+                    id: "obsessify",
+                    name: 'Obsessify',
+                    github: 'https://github.com/davezer/obsessify' ,
+                    deployed: 'https://obsessify.herokuapp.com/',
+                    image: img_obsessify,
+                    alt: "Obsessify Project",
+                    description: 'Obsessify is a website for people to come together and share their various collectibles and comment on them.',
+                    skills: "JS | CSS | React | GraphQL | Bootstrap",
+                },
                 // {
                 //     id: ,
                 //     name: ,
