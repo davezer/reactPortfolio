@@ -81,6 +81,7 @@
 .modal-body {
   position: relative;
   padding: 15px;
+  height: 80%;
 }
 .modal-footer {
   padding: 15px;
