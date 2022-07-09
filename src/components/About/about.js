@@ -34,7 +34,7 @@ function About() {
                         </p>
                         <p>
                             Since I was young I've always had an interest in coding. From the early days building websites using HTML to now, it's something I've always paid attention to.
-                            At the start of the pandemic I made a huge life decision to leave my full time career and switch paths to focus on coding. I'm recently received my certificate of Coding from the Uconn Full Stack Bootcamp.
+                            At the start of the pandemic I made a huge life decision to leave my full time career and switch paths to focus on coding. I recently received my certificate of Coding from the Uconn Full Stack Bootcamp.
                         </p>
                         <p>
                             Outside of coding, I have a passion for music and cooking. I've been playing guitar and drums for almost all of my life, and cooking for just as long. 
