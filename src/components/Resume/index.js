@@ -104,30 +104,31 @@ function Resume() {
     
     return(
       <>
-      <div className='resume-btn-div'>
-        <Button className="resume-btn" onClick={handleShow}>
-          Open Resume
-        </Button>
-      </div>
-        <Modal
-          show={show}
-          onHide={handleClose}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>Resume</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <PDFObject url={resume}/>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
+      
       
           
           <h1 className="resume">RESUME</h1>
+          <div className='resume-btn-div'>
+            <Button className="resume-btn" onClick={handleShow}>
+              Open Resume
+            </Button>
+          </div>
+            <Modal
+              show={show}
+              onHide={handleClose}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Resume</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <PDFObject url={resume}/>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
           <div class="resume-intro">
               <Row>
                   <Col lg={8} md={12}>
