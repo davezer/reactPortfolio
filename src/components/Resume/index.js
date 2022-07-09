@@ -15,7 +15,7 @@ import icon_heroku from '../../assets/icons/backend/icon-heroku.svg';
 import icon_bash from '../../assets/icons/tools/icon-bash.svg';
 import icon_github from '../../assets/icons/tools/icon-github-bootstrap.svg';
 import icon_npm from '../../assets/icons/tools/icon-npm.svg';
-import resume from '../../assets/resume/Dave+Oliverio.pdf';
+import resume from '../../assets/resume/DavidOliverio2022.pdf';
 
 function Resume() {
   const [show, setShow] = useState(false);
