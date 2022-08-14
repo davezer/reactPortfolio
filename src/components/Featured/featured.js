@@ -1,7 +1,7 @@
 import React from 'react';
 import img_ftm from '../../assets/projects/FTM.png';
 import img_trackend from '../../assets/projects/trackend-screenshot.webp';
-import img_memoryGameSS from '../../assets/projects/memoryGameSS';
+import img_memoryGame from '../../assets/projects/memorygameSS.png';
 
 function Featured() {
         const featured = {
@@ -31,7 +31,7 @@ function Featured() {
                     name: 'Memory Game',
                     github: 'https://github.com/davezer/memoryGame' ,
                     deployed: 'https://davezer.github.io/memoryGame/',
-                    image: img_memoryGameSS,
+                    image: img_memoryGame,
                     alt: "memory game",
                     description: 'A simple memory test game built using JS, CSS and HTML',
                     skills: "JS | CSS | HTML | Bootstrap",
