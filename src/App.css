@@ -571,54 +571,29 @@ footer h4:hover {
   }
 }
 
-/* Specially made this for side links */
-@media screen and (max-width: 991px) {
-  .side-email {
-    left: 72%;
-  }
-}
+
 
 /* Media Query for Low Resolution Tablets and Ipads and Smaller */
-@media screen and (max-width: 767px) {
-  main {
-    margin: 0 5px;
-  }
+/* 2778x1284 pixels at 458ppi */
+@media only screen 
+    and (max-width: 428px) 
+    and (max-height: 926px){  
 
-  section {
-    padding: 3rem;
-  }
-
-  .intro {
-    padding-left: 5%;
-  }
-
-  .intro h1,
-  p {
-    font-size: 15px;
-  }
-
-  .intro h2 {
-    font-size: 50px;
-  }
-
-  .intro h3,
-  .title {
-    font-size: 25px;
-  }
-
-  .intro-text-slider {
-    color: white;
+  .navbar-nav {
+    margin: -40px 10px;
+    border: 2px solid var(--charcoal);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 100%;
+    text-align: center;
   }
 
 
-  .inner {
-    padding: 0;
+  .profile-pic {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    
   }
 
-  .about,
-  .jobs,
-  .feature {
-    width: 90%;
-    margin: 0 auto;
-  }
 }

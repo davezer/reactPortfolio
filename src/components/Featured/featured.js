@@ -1,20 +1,20 @@
 import React from 'react';
 import img_ftm from '../../assets/projects/FTM.png';
-import img_trackend from '../../assets/projects/trackend-screenshot.webp';
 import img_memoryGame from '../../assets/projects/memorygameSS.png';
+import img_irvingChampions from '../../assets/projects/irvingChampions.png'
 
 function Featured() {
         const featured = {
             projects: [
                 {
-                    id: "trackend",
-                    name: "Trackend",
-                    github: "https://github.com/paperpatch/trackend",
-                    deployed: "https://trackend-project.herokuapp.com/",
-                    image: img_trackend,
-                    alt: "Trackend Project",
-                    description: "Issue Tracker Ticketing System with a CMS style. Uses authentication and MVC, Handlebars.js as template, Sequelize as ORM and Express-Session for authentication.",
-                    skills: "Bootstrap-Table | Handlebars |Sequelize | MySQL | Express | API | Heroku"
+                    id: "irvingChampionsLeague",
+                    name: "Irving Champions League",
+                    github: "https://github.com/davezer/irvingLeague",
+                    deployed: "https://irving-league.vercel.app/",
+                    image: img_irvingChampions,
+                    alt: "Irving Champions League Project",
+                    description: "Built using JavaScript, svelte, and building local APIs.",
+                    skills: "SvelteKit | SMUI | Vercel | JavaScript | API"
                 },
                 {
                     id: "followTheMoney",
