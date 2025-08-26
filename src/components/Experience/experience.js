@@ -21,6 +21,45 @@ function Experience() {
                 iconStyle={{ background: '#BE7220', color: '#fff' }}
                 icon={<i class="fa-solid fa-graduation-cap work-icons" />}
             >
+                <h3 className="vertical-timeline-element-title">Freelance</h3>
+                <h4 className="vertical-timeline-element-subtitle">Anywhere, USA</h4>
+                <ul>
+                <li>
+                <p>Building Websites and Apps for private clients.</p>
+                </li>
+                <li>
+                    <p>See projects section for some samples of my work.</p>
+                </li>
+                </ul>
+            </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--school"
+                contentStyle={{ background: '#006D77', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #95A8BC' }}
+                date="2023 - 2025"
+                iconStyle={{ background: '#BE7220', color: '#fff' }}
+                icon={<i class="fa-solid fa-graduation-cap work-icons" />}
+            >
+                <h3 className="vertical-timeline-element-title">Planet Home Lending</h3>
+                <h4 className="vertical-timeline-element-subtitle">Meriden, CT</h4>
+                <ul>
+                <li>
+                <p>Working in the Records Management Department. Acted as liason to the IT department</p>
+                </li>
+                <li>
+                    <p>Daily mailing of unrecorded documents to counties across the United States for recording purposes.</p>
+                    <p>Daily receiving of recorded documents from counties across the United States.</p>
+                </li>
+                </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--school"
+                contentStyle={{ background: '#006D77', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #95A8BC' }}
+                date="2021 - 2022"
+                iconStyle={{ background: '#BE7220', color: '#fff' }}
+                icon={<i class="fa-solid fa-graduation-cap work-icons" />}
+            >
                 <h3 className="vertical-timeline-element-title">Uconn Coding Bootcamp</h3>
                 <h4 className="vertical-timeline-element-subtitle">Anywhere, USA</h4>
                 <ul>

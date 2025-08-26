@@ -1,7 +1,7 @@
 import React from 'react';
-import img_ftm from '../../assets/projects/FTM.png';
 import img_memoryGame from '../../assets/projects/memorygameSS.png';
 import img_irvingChampions from '../../assets/projects/irvingChampions.png'
+import img_floss from '../../assets/projects/flossBox.png';
 
 function Featured() {
         const featured = {
@@ -10,21 +10,21 @@ function Featured() {
                     id: "irvingChampionsLeague",
                     name: "Irving Champions League",
                     github: "https://github.com/davezer/irvingLeague",
-                    deployed: "https://irving-league.vercel.app/",
+                    deployed: "https://irvingleague.club",
                     image: img_irvingChampions,
                     alt: "Irving Champions League Project",
-                    description: "Built using JavaScript, svelte, and building local APIs.",
+                    description: "Fantasy Football website built to access the Sleeper App API. Built internal API for accessing managers and badges. Also Utilitzed Google Sheets as a small database to access Future Draft Money, as well as group parlays.",
                     skills: "SvelteKit | SMUI | Vercel | JavaScript | API"
                 },
                 {
-                    id: "followTheMoney",
-                    name: "Follow The Money",
-                    github: "https://github.com/Adamcalcasola/follow-the-money",
-                    deployed: "https://adamcalcasola.github.io/follow-the-money/",
-                    image: img_ftm,
-                    alt: "Follow The Money project" ,
-                    description: "Search by memeber of congress to see how they vote and where their campaign contributions come from. Simple and fast." ,
-                    skills: "Bulma | JavaScript | CSS | jQuery | API",
+                    id: "flossBox",
+                    name: "The Floss Box",
+                    github: "https://github.com/davezer/flossStock",
+                    deployed: "https://floss-stock.vercel.app",
+                    image: img_floss,
+                    alt: "Floss Box project",
+                    description: "Simple and fast inventory app for cross stitching enthusiasts. Simply search the code for the DMC floss you use, and store it in your stash. Used Supabase for the database so users can access their stashes from anywhere.",
+                    skills: "SvelteKit | JavaScript | CSS | API | Vercel | SMUI | Supabase | mySQL",
                 },
                 {
                     id: "memoryGame",
@@ -73,7 +73,7 @@ function Featured() {
                           </div>
                           <div className="col-12 col-lg-7">
                             <a href={featured.deployed} target="_blank" rel="noreferrer">
-                              <img src={featured.image} className="rounded float-end" alt={featured.alt} />
+                              <img src={featured.image} className="rounded float-end project-image" alt={featured.alt} />
                             </a>
                           </div>
                         </div>

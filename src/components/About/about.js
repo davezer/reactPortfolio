@@ -10,9 +10,15 @@ function About() {
   useEffect(() => {
     // Only run in the browser
     typedInstance.current = new Typed(typedEl.current, {
-      strings: ['Full Stack Web Developer'],
+      strings: [
+        "Full Stack Web Developer",
+        "Debugging Enthusiast",
+        "UI/UX Design Explorer",
+        "React and SvelteKit Builder",
+        "Creative Coder with a Passion for Music and Tech"
+        ],
       typeSpeed: 50,
-      backSpeed: 30,
+      backSpeed: 70,
       backDelay: 1000,
       startDelay: 200,
       loop: true,

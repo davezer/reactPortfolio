@@ -279,6 +279,8 @@ section {
   align-items: flex-start;
 }
 
+
+
 .card-body {
   padding: 0.5rem;
 }
@@ -293,12 +295,15 @@ section {
 }
 
 .feature img {
-  width: 70%;
-  height: auto;
+  width: 70%;                    /* keep your preferred scale */
+  height: 250px;                  /* fixed height for uniformity */
+  object-fit: cover;              /* crop instead of squish */
   opacity: 60%;
   transition: all 0.5s ease-out;
   border: 5px solid var(--cadetGrey);
   border-radius: 25px;
+  display: block;                 /* ensures no inline gaps */
+  margin: 0 auto;                 /* keep centered */
 }
 
 .feature img:hover {

@@ -15,8 +15,8 @@ import icon_heroku from '../../assets/icons/backend/icon-heroku.svg';
 import icon_bash from '../../assets/icons/tools/icon-bash.svg';
 import icon_github from '../../assets/icons/tools/icon-github-bootstrap.svg';
 import icon_npm from '../../assets/icons/tools/icon-npm.svg';
-import resume from '../../assets/resume/DavidOliverio2025.pdf';
-import icon_svelte from '../../assets/icons/frontend/icon-svelte.svg';
+import resume from '../../assets/resume/DaveOliverio2025.pdf';
+import icon_svelte from '../../assets/icons/frontend/icon-sveltekit.png';
 
 function Resume() {
   const [show, setShow] = useState(false);
